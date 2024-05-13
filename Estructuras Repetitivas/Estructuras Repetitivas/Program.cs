@@ -6,8 +6,8 @@ int counter = 0;
 double variance = 0;
 for (int i = 0; i < 10; i++)
 {
-    Console.Write($"Give me your height person {i+1}: ");
-    heights[i] = Convert.ToInt32(Console.ReadLine());
+    Console.Write($"Give me your height person {i+1} in cm : ");
+    heights[i] = Convert.ToDouble(Console.ReadLine());
     sum += heights[i];
 }
 prom = sum / 10;
