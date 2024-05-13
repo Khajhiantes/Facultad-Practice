@@ -9,7 +9,7 @@ namespace Metodo_Modificadores
 {
     internal class Statistics
     {
-        public (int moda, int valorMin, int valorMax) ModaMinMax(int[] values)
+        public (int moda, int valorMin, int valorMax) ModaMinMax(params int[] values)
         {
             Array.Sort(values);
 
