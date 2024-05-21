@@ -24,10 +24,10 @@ namespace Simple_Inventory_System
                     item[i] = information;
                     count++;
                     Console.WriteLine("Item add succesfully");
-                    Console.WriteLine($"Item Id:{item[i].id} ");
-                    Console.WriteLine($"Item name: {item[i].name}");
-                    Console.WriteLine($"Item quantity: {item[i].quantity}");
-                    Console.WriteLine($"Item price: {item[i].price}");
+                    Console.WriteLine($"Item Id:{item[i].GetId()} ");
+                    Console.WriteLine($"Item name: {item[i].GetName()}");
+                    Console.WriteLine($"Item quantity: {item[i].GetQuantity()}");
+                    Console.WriteLine($"Item price: {item[i].GetPrice()}");
                     break;
                 }
             }
@@ -37,9 +37,9 @@ namespace Simple_Inventory_System
             bool itemFound = false;
             for (int i = 0; i< count; i++)
             {
-                if (item[i].id == id)
+                if (item[i].GetId() == id)
                 {
-                    item[i].quantity = quantity;
+                    item[i].SetQuantity(quantity);
                     itemFound = true;
                     Console.WriteLine("Item quantity updated succesfully");
                 }
@@ -56,22 +56,23 @@ namespace Simple_Inventory_System
             bool itemFound = false;
             for (int i = 0; i < count; i++)
             {
-                if (item[i].id == id)
+                if (item[i].GetId() == id)
                 {
                     Console.WriteLine("Item details");
-                    Console.WriteLine($"Item Id:{item[i].id} ");
-                    Console.WriteLine($"Item name: {item[i].name}");
-                    Console.WriteLine($"Item quantity: {item[i].quantity}");
-                    Console.WriteLine($"Item price: {item[i].price}");
+                    Console.WriteLine($"Item Id:{item[i].GetId()} ");
+                    Console.WriteLine($"Item name: {item[i].GetName()}");
+                    Console.WriteLine($"Item quantity: {item[i].GetQuantity()}");
+                    Console.WriteLine($"Item price: {item[i].GetPrice()}");
                     itemFound = true;
                     break;
                 }
-                if (!itemFound)
+
+            }                
+            if (!itemFound)
                 {
                     Console.WriteLine("Item not found");
                 }
-            }
-            Console.WriteLine("Item not found");
+
         }
 
         public void RemoveItem(int id)
@@ -79,7 +80,7 @@ namespace Simple_Inventory_System
             bool itemFound = false;
             for (int i = 0; i< count; i++)
             {
-                if (item[i].id == id)
+                if (item[i].GetId() == id)
                 {
                     for (int j = i; j < count - 1; j++)
                     {
@@ -98,14 +99,15 @@ namespace Simple_Inventory_System
         }
         public void ShowItems()
         {
+            Console.WriteLine("Items details");
             for (int i = 0; i < count; i++)
             {
-                    Console.WriteLine("Item details");
-                    Console.WriteLine($"Item Id:{item[i].id} ");
-                    Console.WriteLine($"Item name: {item[i].name}");
-                    Console.WriteLine($"Item quantity: {item[i].quantity}");
-                    Console.WriteLine($"Item price: {item[i].price}");
-                    Console.WriteLine("_____________________________");
+
+                Console.WriteLine($"Item Id:{item[i].GetId()} ");
+                Console.WriteLine($"Item name: {item[i].GetName()}");
+                Console.WriteLine($"Item quantity: {item[i].GetQuantity()}");
+                Console.WriteLine($"Item price: {item[i].GetPrice()}");
+                Console.WriteLine("_____________________________");
 
             }  
         }

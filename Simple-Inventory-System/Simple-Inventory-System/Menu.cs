@@ -60,10 +60,10 @@ namespace Simple_Inventory_System
                             break;
                         }
                         Items item = new Items();
-                        item.id = id;
-                        item.name = name;
-                        item.quantity = quantity;
-                        item.price = price;
+                        item.SetId(id);
+                        item.SetName(name);
+                        item.SetQuantity(quantity);
+                        item.SetPrice(price);
                         inventory.AddItem(item);
                         break;
                     case 2:
