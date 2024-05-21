@@ -34,17 +34,26 @@ namespace Simple_Inventory_System
         }
         public void UpdateQuantity(int id, int quantity)
         {
+            bool itemFound = false;
             for (int i = 0; i< count; i++)
             {
                 if (item[i].id == id)
                 {
                     item[i].quantity = quantity;
+                    itemFound = true;
+                    Console.WriteLine("Item quantity updated succesfully");
                 }
             }
+            if (!itemFound)
+            {
+                Console.WriteLine("Item not found");
+            }
+
         }
 
         public void ShowItem(int id)
         {
+            bool itemFound = false;
             for (int i = 0; i < count; i++)
             {
                 if (item[i].id == id)
@@ -54,13 +63,20 @@ namespace Simple_Inventory_System
                     Console.WriteLine($"Item name: {item[i].name}");
                     Console.WriteLine($"Item quantity: {item[i].quantity}");
                     Console.WriteLine($"Item price: {item[i].price}");
+                    itemFound = true;
                     break;
                 }
+                if (!itemFound)
+                {
+                    Console.WriteLine("Item not found");
+                }
             }
+            Console.WriteLine("Item not found");
         }
 
         public void RemoveItem(int id)
         {
+            bool itemFound = false;
             for (int i = 0; i< count; i++)
             {
                 if (item[i].id == id)
@@ -68,12 +84,16 @@ namespace Simple_Inventory_System
                     for (int j = i; j < count - 1; j++)
                     {
                         item[j] = item[j + 1];
-                        
                     }
+                    itemFound = true;
                     count--;
                     Console.WriteLine("Item removed succesfully");
                     break;
                 }
+            }
+            if (!itemFound)
+            {
+                Console.WriteLine("Item not found");
             }
         }
         public void ShowItems()
