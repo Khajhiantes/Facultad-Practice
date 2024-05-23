@@ -1,0 +1,191 @@
+Sure, here's a simple exercise to help you practice the basics of Object-Oriented Programming (OOP):
+Exercise: Simple Bank Account
+Create a simple bank account system. Each bank account should have the following features:
+1.	Each account has an account number, an account holder's name, and a balance.
+2.	Users should be able to deposit money into the account. When money is deposited, the balance should increase.
+3.	Users should be able to withdraw money from the account. When money is withdrawn, the balance should decrease. If a user tries to withdraw more money than the account balance, the system should display an error message.
+4.	Users should be able to check the balance of the account at any time.
+Here are some guidelines to help you get started:
+1.	Create a BankAccount class. This class should have private attributes for the account number, account holder's name, and balance. It should have public methods for depositing money, withdrawing money, and checking the balance.
+2.	In the Main method, create an instance of the BankAccount class and test its methods by depositing, withdrawing money, and checking the balance.
+This exercise will help you practice creating classes and objects, using methods to interact with those objects, and maintaining the state of an object. Good luck!
+
+
+Sure, here's another programming exercise for you:
+Exercise: Student Grade Tracker
+Create a Student class with the following properties:
+•	Name: a string that holds the name of the student.
+•	Grades: a list of integers that holds the grades of the student.
+The Student class should also have the following methods:
+•	AddGrade(int grade): Adds a grade to the student's list of grades.
+•	GetAverageGrade(): Returns the average of the student's grades.
+Next, create a Classroom class. This class should have the following:
+•	A private list of Student objects.
+•	A method AddStudent(Student student) that adds a student to the classroom.
+•	A method GetClassAverageGrade(): Returns the average grade of all students in the classroom.
+
+Ejercicio: Registro de Calificaciones de Estudiantes
+Crea una clase Estudiante con las siguientes propiedades:
+•	Nombre: una cadena que contiene el nombre del estudiante.
+•	Calificaciones: una lista de enteros que contiene las calificaciones del estudiante.
+La clase Estudiante también debe tener los siguientes métodos:
+•	AgregarCalificacion(int calificacion): Agrega una calificación a la lista de calificaciones del estudiante.
+•	ObtenerPromedioCalificaciones(): Devuelve el promedio de las calificaciones del estudiante.
+A continuación, crea una clase Aula. Esta clase debe tener lo siguiente:
+•	Una lista privada de objetos Estudiante.
+•	Un método AgregarEstudiante(Estudiante estudiante) que agrega un estudiante al aula.
+•	Un método ObtenerPromedioCalificacionesAula(): Devuelve la calificación promedio de todos los estudiantes en el aula.
+Finalmente, en tu método Main, crea varios objetos Estudiante, agrega calificaciones a ellos, añádelos a un objeto Aula, y luego imprime la calificación promedio de todo el aula.
+
+
+Sure, here's another exercise prompt for you:
+Exercise Prompt: Simple Inventory System
+You are creating a simple inventory system for a small store. Each item in the store has a unique ID, a name, a quantity, and a price. Your system should have the following features:
+1.	Users should be able to add new items to the inventory. When an item is added, the user should specify the item's ID, name, quantity, and price.
+2.	Users should be able to update the quantity of an existing item. When the quantity is updated, the user should specify the item's ID and the new quantity.
+3.	Users should be able to check the details of an item at any time. The system should display the item's ID, name, quantity, and price.
+4.	Users should be able to remove an item from the inventory. When an item is removed, the user should specify the item's ID.
+5.	Your system should handle invalid user inputs gracefully. For example, if the user tries to update the quantity of an item that does not exist, your system should display an error message and then allow the user to try again.
+For this exercise, you can assume that your system only needs to handle a fixed number of items (for example, 100). You can use an array to store the items.
+This exercise will help you practice creating and manipulating objects, handling arrays, interacting with the user via the console, and basic error handling. Good luck!
+
+
+
+
+
+Sure, here's another exercise prompt for you:
+Exercise Prompt: Simple Bank System
+You are creating a simple bank system. Each account in the bank has an account number, an account holder's name, and a balance. Your system should have the following features:
+1.	Users should be able to open new accounts. When an account is opened, the user should specify the account number and the account holder's name. The initial balance should be set to 0.
+2.	Users should be able to deposit money into an account. When money is deposited, the user should specify the account number and the amount to be deposited. The system should add the deposit amount to the account balance.
+3.	Users should be able to withdraw money from an account. When money is withdrawn, the user should specify the account number and the amount to be withdrawn. The system should check if the account has enough balance. If the balance is not sufficient, the system should display an error message.
+4.	Users should be able to check the balance of an account at any time. The system should display the account number, account holder's name, and balance.
+5.	Your system should handle invalid user inputs gracefully. For example, if the user tries to withdraw from an account that does not exist, your system should display an error message and then allow the user to try again.
+For this exercise, you can assume that your system only needs to handle a fixed number of accounts (for example, 10). You can use an array to store the accounts.
+This exercise will help you practice creating and manipulating objects, handling arrays, interacting with the user via the console, and basic error handling. Good luck!
+
+
+
+
+
+Exercise Prompt: Shopping Cart System
+You are creating a simple shopping cart system for an online store. Each item in the store has a name, a price, and a quantity available. Your system should have the following features:
+1.	Users should be able to add items to their shopping cart. When an item is added to the cart, the user should specify the name of the item and the quantity they want to purchase. The system should check if the item is available and if the requested quantity is less than or equal to the quantity available. If the item is not available or the requested quantity is too high, the system should display an error message.
+2.	Users should be able to view t he items in their shopping cart at any time. The system should display the name, price, and quantity of each item in the cart.
+3.	Users should be able to remove items from their shopping cart. When an item is removed from the cart, it should be returned to the store's inventory.
+4.	Users should be able to check out. When a user checks out, the system should display the total cost of all items in the cart and then clear the cart.
+5.	Your system should handle invalid user inputs gracefully. For example, if the user tries to add an item that does not exist, your system should display an error message and then allow the user to try again.
+For this exercise, you can assume that your system only needs to handle a fixed number of items (for example, 10). You can use an array or a list to store the items.
+This exercise will help you practice creating and manipulating objects, handling arrays or lists, interacting with the user via the console, and basic error handling. Good luck!
+
+
+
+
+
+Exercise Prompt: Task Management System
+You are creating a task management system. Each task has a title, a description, and a status indicating whether the task is completed or not.
+Your system should have the following features:
+1.	Users should be able to add new tasks. When a new task is added, the user should provide a title and a description. The task is considered not completed when it is created.
+2.	Users should be able to mark tasks as completed.
+3.	Users should be able to delete tasks.
+4.	Users should be able to view all tasks, both completed and not completed.
+5.	Your system should have a menu that allows users to select what action they want to perform (add a task, mark a task as completed, delete a task, view all tasks, or exit the program).
+6.	Your system should handle invalid user inputs gracefully. For example, if the user tries to mark a task as completed that does not exist, your system should display an error message and then allow the user to try again.
+For this exercise, you can assume that your system only needs to handle a fixed number of tasks (for example, 10). You can use an array to store the tasks.
+This exercise will help you practice creating and manipulating objects, handling arrays, interacting with the user via the console, and basic error handling. Good luck!
+
+
+
+
+
+¡Por supuesto! Aquí tienes un enunciado de un ejercicio que puedes usar para practicar:
+Enunciado del ejercicio: Sistema de gestión de tareas
+Estás creando un sistema de gestión de tareas. Cada tarea tiene un título, una descripción y un estado que indica si la tarea está completada o no.
+Tu sistema debe tener las siguientes características:
+1.	Los usuarios deben poder agregar nuevas tareas. Cuando se agrega una nueva tarea, el usuario debe proporcionar un título y una descripción. La tarea se considera no completada cuando se crea.
+2.	Los usuarios deben poder marcar las tareas como completadas.
+3.	Los usuarios deben poder borrar tareas.
+4.	Los usuarios deben poder ver todas las tareas, tanto completadas como no completadas.
+5.	Tu sistema debe tener un menú que permita a los usuarios seleccionar qué acción quieren realizar (agregar una tarea, marcar una tarea como completada, borrar una tarea, ver todas las tareas o salir del programa).
+6.	Tu sistema debe manejar las entradas inválidas de los usuarios de manera elegante. Por ejemplo, si el usuario intenta marcar como completada una tarea que no existe, tu sistema debe mostrar un mensaje de error y luego permitir al usuario intentarlo de nuevo.
+Para este ejercicio, puedes asumir que tu sistema solo necesita manejar un número fijo de tareas (por ejemplo, 10). Puedes usar un array para almacenar las tareas.
+Este ejercicio te ayudará a practicar la creación y manipulación de objetos, el manejo de arrays, la interacción con el usuario a través de la consola y el manejo de errores básico. ¡Buena suerte!
+
+
+
+
+
+
+
+¡Por supuesto! Aquí tienes un ejercicio:
+Estás desarrollando un sistema para un cine. El cine tiene un número limitado de asientos. Cada vez que una persona compra un boleto, se debe registrar su nombre y la hora de la compra. Cuando una persona asiste a la película, se debe registrar la hora de entrada. Cuando la persona sale, se debe registrar la hora de salida. El sistema debe ser capaz de hacer lo siguiente:
+1.	Registrar la compra de un boleto, siempre y cuando haya un asiento disponible.
+2.	Registrar la entrada y salida de una persona.
+3.	Mostrar cuántos asientos están disponibles en cualquier momento.
+4.	Calcular el tiempo total que una persona estuvo en el cine basándose en su hora de entrada y salida.
+Intenta resolver este ejercicio y crea las clases y métodos necesarios para implementar la funcionalidad descrita. ¡Buena suerte!
+
+
+
+¡Entendido! Aquí tienes un ejercicio que no requiere el uso de listas ni colecciones:
+Estás desarrollando un sistema para un estacionamiento. El estacionamiento tiene un número limitado de espacios para estacionar. Cada vez que un auto entra al estacionamiento, se debe registrar su placa y la hora de entrada. Cuando un auto sale, se debe calcular el costo del estacionamiento basado en la cantidad de tiempo que el auto estuvo estacionado. El costo es de $2 por hora.
+El sistema debe ser capaz de hacer lo siguiente:
+1.	Registrar la entrada de un auto, siempre y cuando haya un espacio disponible.
+2.	Registrar la salida de un auto y calcular el costo del estacionamiento.
+3.	Mostrar cuántos espacios de estacionamiento están disponibles en cualquier momento.
+Intenta resolver este ejercicio y crea las clases y métodos necesarios para implementar la funcionalidad descrita. ¡Buena suerte!
+
+
+Of course! Here's an exercise:
+You're developing a system for a parking lot. The parking lot has a limited number of parking spaces. Each time a car enters the parking lot, its license plate and entry time should be recorded. When a car leaves, the parking fee should be calculated based on the amount of time the car was parked. The fee is $2 per hour.
+The system should be able to do the following:
+1.	Record the entry of a car, as long as there is an available space.
+2.	Record the exit of a car and calculate the parking fee.
+3.	Show how many parking spaces are available at any given time.
+Try to solve this exercise and create the necessary classes and methods to implement the described functionality. Good luck!
+
+
+
+¡Por supuesto! Aquí tienes otro ejercicio para practicar:
+Imagina que estás creando un juego de piedra, papel o tijeras. En este juego, dos jugadores eligen una de las tres opciones y se enfrentan. Las reglas son las siguientes: la piedra gana a las tijeras, las tijeras ganan al papel y el papel gana a la piedra. Si ambos jugadores eligen la misma opción, es un empate.
+Aquí están los detalles:
+1.	Cada jugador elige una opción: piedra, papel o tijeras.
+2.	Se determina el ganador de la ronda según las reglas del juego.
+3.	El juego continúa hasta que un jugador gane 3 rondas.
+Para este ejercicio, deberías crear las siguientes clases:
+1.	Player: Esta clase representa a un jugador. Tiene una propiedad Score para llevar la cuenta de las rondas ganadas por el jugador, y un método ChooseOption para elegir una opción.
+2.	Game: Esta es la clase principal que representa el juego. Tiene dos instancias de Player para representar a los dos jugadores, y un método PlayRound para jugar una ronda del juego. También tiene un método IsGameOver para comprobar si el juego ha terminado, y un método StartGame para iniciar el juego y manejar la interacción con el usuario.
+Además, deberías crear una enumeración Option para representar las tres opciones posibles: piedra, papel y tijeras.
+Espero que este ejercicio te ayude a practicar y a entender mejor cómo funcionan las clases y los objetos en C#. ¡Buena suerte!
+
+
+
+
+
+
+¡Por supuesto! Aquí tienes otro ejercicio para practicar:
+Imagina que estás creando un juego de lanzamiento de monedas. En este juego, dos jugadores lanzan una moneda y el resultado puede ser cara o cruz. Las reglas son las siguientes: si ambos jugadores obtienen el mismo resultado, es un empate. Si no, el jugador que obtiene cara gana. El juego continúa hasta que un jugador gane 3 rondas.
+Aquí están los detalles:
+1.	Cada jugador lanza una moneda, obteniendo cara o cruz.
+2.	Se determina el ganador de la ronda según las reglas del juego.
+3.	El juego continúa hasta que un jugador gane 3 rondas.
+Para este ejercicio, deberías crear las siguientes clases:
+1.	Player: Esta clase representa a un jugador. Tiene una propiedad Score para llevar la cuenta de las rondas ganadas por el jugador, y un método FlipCoin para lanzar una moneda.
+2.	Game: Esta es la clase principal que representa el juego. Tiene dos instancias de Player para representar a los dos jugadores, y un método PlayRound para jugar una ronda del juego. También tiene un método IsGameOver para comprobar si el juego ha terminado, y un método StartGame para iniciar el juego y manejar la interacción con el usuario.
+Además, deberías crear una enumeración Coin para representar los dos posibles resultados de lanzar una moneda: cara y cruz.
+
+
+
+
+
+
+
+
+¡Por supuesto! Aquí tienes un ejercicio similar pero con un contexto diferente. Vamos a crear un sistema simple para una librería.
+1.	Clase Libro: Esta clase representará un libro en la librería. Debería tener propiedades para el título, el autor y el precio. También debería tener un constructor que tome el título, el autor y el precio.
+2.	Clase Libreria: Esta clase representará la librería. Debería tener una propiedad para el libro. Debería tener métodos para establecer el libro de la librería y vender el libro (lo que hará que el libro de la librería sea null).
+3.	Programa principal: En tu método Main, puedes crear una instancia de Libreria, establecer y vender un libro para probar tu código.
+
+
+
+
