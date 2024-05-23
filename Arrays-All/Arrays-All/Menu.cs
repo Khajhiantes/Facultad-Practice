@@ -11,7 +11,8 @@ namespace Arrays_All
     {
         public void ShowMenu()
         {
-            
+
+            SistemArrays sistemita =    new SistemArrays();
             bool exit = true;
             while (exit)
             {
@@ -30,13 +31,26 @@ namespace Arrays_All
                 switch (choice)
                 {
                     case 1:
-                        Console.WriteLine("Introduce the array: ");                 
+                        Console.WriteLine("Introduce the array: ");     
+                        BaseArray arrayto = new BaseArray();
+                        arrayto.RellenarArray();
+                        sistemita.AddArray(arrayto);
+
                         break;
                     case 2:
                         Console.WriteLine("Introduce the number array to remove: ");
+                        int choice2;
+                        bool isNumber2 = int.TryParse(Console.ReadLine(), out choice2);//validate a number
+                        if (!isNumber2)
+                        {
+                            Console.WriteLine("Invalid num");
+                            continue;
+                        }
+                        sistemita.RemoveArray(choice2);
                         break;
                     case 3:
                         Console.WriteLine("Show arrays ");
+                        sistemita.ShowArray();
                         break;
                     case 4:
                         exit = false;
